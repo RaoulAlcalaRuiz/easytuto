@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section class="graph">
+    <h2>Titre du graphique</h2>
+    <span class="json">
+        {"type":"line"
+        ,"width":900
+        ,"height":400
+        ,"datasets":
+            [{
+                "label": "Nbr de chômeurs",
+                "data": [65, 59, 20, 81, 56, 55, 40],
+                "color": [[150,20,60,0.2]],
+                "hoverColor": [[150,20,60,0.5]],
+                "borderColor": [[150,20,60,1]]
+            },
+            {
+                "label": "Nbr de travailleurs",
+                "data": [165, 159, 120, 181, 156, 155, 140],
+                "color": [[150,60,60,0.2]],
+                "hoverColor": [[150,60,60,0.5]],
+                "borderColor": [[150,60,60,1]]
+            }
+        ],
+        "dataLabel": ["First","second","third","fourth","sixth","seventh"]
+        }
+    </span>
+    <div class="graph"></div>
+</section>
+
+
+<section class="graph">
+    <h2>Titre du graphique</h2>
+    <span class="json">
+        {"type":"bar"
+        ,"width":400
+        ,"height":400
+        ,"datasets":
+            [{
+                "label": "test",
+                "data": [65, 59, 20, 81, 56, 55, 40]
+            }],
+        "dataLabel": ["First","second","third","fourth","sixth","seventh"]
+        }
+    </span>
+    <div class="graph"></div>
+</section>
+
+<section class="graph">
+    <h2>Titre du graphique</h2>
+    <span class="json">
+        {"type":"doughnut"
+        ,"width":400
+        ,"height":400
+        ,"datasets":
+            [{
+                "label": "test",
+                "data": [65, 59, 20, 81, 56, 55, 40],
+                "color": [[150,60,60,0.2],[150,60,65,0.2],[150,60,70,0.2],[20,255,20,1],[150,60,90,0.2]],
+                "hoverColor": [[150,60,60,0.5]],
+                "borderColor": [[150,60,60,1]]
+            },
+        {
+                "label": "test",
+                "data": [65, 59, 20, 81, 56, 55, 40],
+                "color": [[150,60,60,0.2],[150,60,65,0.2],[150,60,70,0.2],[20,255,20,1],[150,60,90,0.2]],
+                "hoverColor": [[150,60,60,0.5]],
+                "borderColor": [[150,60,60,1]]
+            }],
+        "dataLabel": ["First","second","third","fourth","sixth","seventh"]
+        }
+    </span>
+    <div class="graph"></div>
+</section>
+
+<section class="graph">
+    <h2>Titre du graphique</h2>
+    <span class="json">
+        {"type":"pie"
+        ,"width":400
+        ,"height":400
+        ,"datasets":
+            [{
+                "label": "test",
+                "data": [65, 59, 20, 81, 56, 55, 40],
+                "color": [[150,60,60,0.2],[150,60,65,0.2],[150,60,70,0.2],[20,255,20,1],[150,60,90,0.2]],
+                "hoverColor": [[150,60,60,0.5]],
+                "borderColor": [[150,60,60,1]]
+            }
+        ],
+        "dataLabel": ["First","second","third","fourth","sixth","seventh"]
+        }
+    </span>
+    <div class="graph"></div>
+</section>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+<script src="webpack/easygraph.min.js"></script>
+</html>
